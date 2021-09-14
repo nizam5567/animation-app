@@ -11,3 +11,229 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  height: 1000px;
+}
+.orbitGroup{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 44;
+  perspective: 900px;
+  pointer-events: none;
+  /* background-color: #060A3C; */
+  background-color: rgba(0,0,0,0.8);
+
+}
+.orbit1 {
+  /* background: rgba(123, 122, 163, 0.06); */
+  background: rgb(255 255 255 / 15%);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+}
+
+.orbit2 {
+	background: rgba(123, 122, 163, 0.04);
+	/* border: 2px solid rgba(255, 255, 255, 0.1); */
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+	transform-origin: center;
+}
+
+.orbitItem {
+  border-radius: 50%;
+  width: 79.5%;
+  height: 79.5%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(255, 255, 0, 0.589); */
+  background-color: rgba(253, 213, 95, 0.8);
+
+  
+}
+.orbit1 .orbitItem{ 
+	/* background-color: rgba(255, 255, 255, 0.945); */
+	background-color: #ccc;
+
+}
+.planet {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	pointer-events: all;
+	cursor: pointer;
+}
+.planet1 {
+	top: 66.5%;
+	left: -17.5%;
+}
+ .planet2 {
+	top: 79.5%;
+	left: 88.5%;
+}
+
+ .planet3 {
+	top: -9%;
+	left: 80%;
+}
+
+ .planet4 {
+	top: 1%;
+	left: 80%;
+}
+
+ .planet5 {
+	top: 77%;
+	left: -1%;
+}
+
+ .planetCircle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 66px;
+	height: 66px;
+	position: relative;
+}
+
+ .planetCircleBg {
+	background-color: #2C3071;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	transition: 0.5s cubic-bezier(.2,.95,.57,.99);
+}
+
+ .planet:hover .planetCircleBg {
+	transform: scale(0.94);
+}
+
+ .planetIcon {
+	width: 36px;
+	height: 28px;
+	position: relative;
+}
+
+ .planetIcon svg {
+	display: block;
+	width: 36px;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.planetText {
+	font-family: 'Axiforma', sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 222%;
+	text-align: center;
+	color: #219DEB;
+	margin: auto;
+	position: absolute;
+	width: 200px;
+	top: calc(100% + 0px);
+	right: -200%;
+	left: -200%;
+
+	transition: 0.5s cubic-bezier(.2,.95,.57,.99);
+}
+
+.planetIcon {
+	width: 36px;
+	height: 28px;
+	position: relative;
+}
+
+.planetIcon svg {
+	display: block;
+	width: 36px;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.planetCircleSe1 {
+	border: 1px solid #2C3071;
+	opacity: 0.6;
+	border-radius: 50%;
+	width: 86px;
+	height: 86px;
+	margin: auto;
+	position: absolute;
+	top: -200%;
+	right: -200%;
+	bottom: -200%;
+	left: -200%;
+
+	transition: 0.33s cubic-bezier(.2,.95,.57,.99);
+}
+
+.planet:hover .planetCircleSe1 {
+	opacity: 1;
+
+	transform: scale(1.2);
+}
+
+.planetCircleSe2 {
+	border: 1px solid #2C3071;
+	opacity: 0.4;
+	border-radius: 50%;
+	width: 106px;
+	height: 106px;
+	margin: auto;
+	position: absolute;
+	top: -200%;
+	right: -200%;
+	bottom: -200%;
+	left: -200%;
+	transition: 0.5s cubic-bezier(.2,.95,.57,.99);
+}
+
+.planet:hover .planetCircleSe2 {
+	opacity: 1;
+
+	transform: scale(1.3);
+}
+
+
